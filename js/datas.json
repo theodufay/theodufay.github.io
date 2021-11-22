@@ -1,0 +1,119 @@
+{
+  "Jobs": [{
+      "DATE": "Mars 2021 – Maintenant",
+      "WHERE": "Club de prévention « Avenir des cités » | Sallaumines",
+      "JOBS": "Éducateur en formation.",
+      "DESC": ""
+    },
+    {
+      "DATE": "Septembre 2020 – Févirer 2021",
+      "WHERE": "Centre Éducatif Fermé | Liévin",
+      "JOBS": "Éducateur en formation.",
+      "DESC": ""
+    },
+    {
+      "DATE": "Avril 2020",
+      "WHERE": "MECS « Temporaire COVID19 » | EPDEF",
+      "JOBS": "Éducateur sans qualification.",
+      "DESC": ""
+    },
+    {
+      "DATE": "Oct 2019 – Janvier 2020",
+      "WHERE": "MAS « Cœur de vie » | AFEJI",
+      "JOBS": "Éducateur stagiaire.",
+      "DESC": ""
+    },
+    {
+      "DATE": "Déc 2018 – Mai 2019",
+      "WHERE": "MECS « Starter » | La sauvegarde du Nord",
+      "JOBS": "Éducateur sans qualification.",
+      "DESC": ""
+    },
+    {
+      "DATE": "Jan. 2018 – Nov 2018",
+      "WHERE": "Produit et Aliment pour animaux | Anselin",
+      "JOBS": "Chauffeur Livreur",
+      "DESC": ""
+    },
+    {
+      "DATE": "Sept 2014 – Nov 2017",
+      "WHERE": "Développeur web et mobile | Groww",
+      "JOBS": "Développement et maintenance de l’application.",
+      "DESC": ""
+    },
+    {
+      "DATE": "Févr 2011 – Juil 2014",
+      "WHERE": "Développeur d’applications Web | Addictiz",
+      "JOBS": "Développement d’applications, de sites et de jeux.",
+      "DESC": ""
+    }
+  ],
+  "Degrees": [{
+      "SCHOOL_NAME": "Institut Régional du Travail Social (IRTS), Loos",
+      "DEGREE": "Diplôme d’État d’Éducateur Spécialisé (DEES)",
+      "DATE": "2019 – Maintenant",
+      "DESC_1": "",
+      "DESC_2": ""
+    },
+    {
+      "SCHOOL_NAME": "Université Picardie Jules Verne, St-Quentin",
+      "DEGREE": "Licence Professionnelle",
+      "DATE": "2010 – 2011",
+      "DESC_1": "Opt. Développement Web",
+      "DESC_2": ""
+    },
+    {
+      "SCHOOL_NAME": "Lycée Guy Mollet, Arras",
+      "DEGREE": "BAC série STG / BTS Informatique",
+      "DATE": "2005 – 2010",
+      "DESC_1": "Opt. informatique de gestion",
+      "DESC_2": ""
+    }
+  ],
+  "Volunteer": [{
+      "NAME": "Party Pature",
+      "DATE": "2018",
+      "MISSION": "Contructions bois",
+      "DESC": ""
+    },
+    {
+      "NAME": "Abej – Association, Lille",
+      "DATE": "2015 - 2017",
+      "MISSION": "Accueil de nuits de MIE (Mineurs Isolés Étranger)",
+      "DESC": ""
+    },
+    {
+      "NAME": "Collectif des Olieux – Association, Lille",
+      "DATE": "2016 - 2017",
+      "MISSION": "Aide aux devoirs, recherche de stages",
+      "DESC": ""
+    },
+    {
+      "NAME": "Les restos du cœur – Association, Lille",
+      "DATE": "2012 - 2014",
+      "MISSION": "Accueil et veiller au bon déroulement des repas",
+      "DESC": ""
+    }
+  ],
+  "Hobbies": [
+    {
+    "NAME":"Randonnée",
+    "PICS":"shoe-prints"
+  },{
+    "NAME":"Musique",
+    "PICS":"headphones"
+  },{
+    "NAME":"Informatique",
+    "PICS":"laptop-code"
+  },{
+    "NAME":"Escalade",
+    "PICS":"mountain"
+  },{
+    "NAME":"Voyage",
+    "PICS":"plane-departure"
+  },{
+    "NAME":"Lecture",
+    "PICS":"book-open"
+  }
+]
+}
