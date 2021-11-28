@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 $.get("html/hobbies-base.html", function(html) {
                 hobbies_hmtl = html;
 
-                    $.getJSON("js/datas.json", function(json) {
+                    $.getJSON("js/datas.json?v=3", function(json) {
                         $('#experience_content').html('');    
                         json.Jobs.forEach((key,index)=>{
                             var html = job_html; 

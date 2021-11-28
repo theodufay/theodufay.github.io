@@ -18,74 +18,81 @@
       "DESC": ""
     },
     {
-      "DATE": "Oct 2019 – Janvier 2020",
+      "DATE": "Octobre 2019 – Janvier 2020",
       "WHERE": "MAS « Cœur de vie » | AFEJI",
       "JOBS": "Éducateur stagiaire.",
       "DESC": ""
     },
     {
-      "DATE": "Déc 2018 – Mai 2019",
+      "DATE": "Décembre 2018 – Mai 2019",
       "WHERE": "MECS « Starter » | La sauvegarde du Nord",
       "JOBS": "Éducateur sans qualification.",
       "DESC": ""
     },
     {
-      "DATE": "Jan. 2018 – Nov 2018",
+      "DATE": "Janvier 2018 – Novembre 2018",
       "WHERE": "Produit et Aliment pour animaux | Anselin",
       "JOBS": "Chauffeur Livreur",
       "DESC": ""
     },
     {
-      "DATE": "Sept 2014 – Nov 2017",
+      "DATE": "Septembre 2014 – Novembre 2017",
       "WHERE": "Développeur web et mobile | Groww",
       "JOBS": "Développement et maintenance de l’application.",
       "DESC": ""
     },
     {
-      "DATE": "Févr 2011 – Juil 2014",
+      "DATE": "Février 2011 – Juillet 2014",
       "WHERE": "Développeur d’applications Web | Addictiz",
       "JOBS": "Développement d’applications, de sites et de jeux.",
       "DESC": ""
     }
   ],
-  "Degrees": [{
-      "SCHOOL_NAME": "Institut Régional du Travail Social (IRTS), Loos",
-      "DEGREE": "Diplôme d’État d’Éducateur Spécialisé (DEES)",
-      "DATE": "2019 – Maintenant",
-      "DESC_1": "",
-      "DESC_2": ""
-    },
-    {
-      "SCHOOL_NAME": "Université Picardie Jules Verne, St-Quentin",
-      "DEGREE": "Licence Professionnelle",
-      "DATE": "2010 – 2011",
-      "DESC_1": "Opt. Développement Web",
-      "DESC_2": ""
-    },
-    {
-      "SCHOOL_NAME": "Lycée Guy Mollet, Arras",
-      "DEGREE": "BAC série STG / BTS Informatique",
-      "DATE": "2005 – 2010",
-      "DESC_1": "Opt. informatique de gestion",
-      "DESC_2": ""
-    }
-  ],
+  "Degrees": [
+  {
+    "SCHOOL_NAME": "Institut Régional du Travail Social, Loos",
+    "DEGREE": "Diplôme d’État d’Éducateur Spécialisé",
+    "DATE": "2019 – Maintenant",
+    "DESC_1": "",
+    "DESC_2": ""
+  },
+  {
+    "SCHOOL_NAME": "Université Picardie Jules Verne, St-Quentin",
+    "DEGREE": "Licence Professionnelle – Web",
+    "DATE": "2010 – 2011",
+    "DESC_1": "Option Développement Web",
+    "DESC_2": ""
+  },
+  {
+    "SCHOOL_NAME": "Lycée Guy Mollet, Arras",
+    "DEGREE": "BAC série STG / BTS Informatique",
+    "DATE": "2005 – 2010",
+    "DESC_1": "Option informatique de gestion",
+    "DESC_2": ""
+  }
+],
   "Volunteer": [{
-      "NAME": "Party Pature",
+      "NAME": "Party Pature – Festival, Bouvignies",
       "DATE": "2018",
-      "MISSION": "Contructions bois",
+      "MISSION": "Contructions bois et service",
       "DESC": ""
     },
     {
       "NAME": "Abej – Association, Lille",
       "DATE": "2015 - 2017",
-      "MISSION": "Accueil de nuits de MIE (Mineurs Isolés Étranger)",
+      "MISSION": "Accueil de nuits pour des mineurs isolés étranger",
       "DESC": ""
     },
     {
       "NAME": "Collectif des Olieux – Association, Lille",
       "DATE": "2016 - 2017",
-      "MISSION": "Aide aux devoirs, recherche de stages",
+      "MISSION": "Aide aux devoirs et recherche de stages avec des mineurs étranger",
+      "DESC": ""
+    },
+    {
+      "NAME": "L'Antidote – Bar Associatif, Bordeaux",
+      "DATE": "2014 - 2015",
+      "MISSION": "Service et accueil des groupes et artistes",
       "DESC": ""
     },
     {
@@ -98,7 +105,7 @@
   "Hobbies": [
     {
     "NAME":"Randonnée",
-    "PICS":"shoe-prints"
+    "PICS":"hiking"
   },{
     "NAME":"Musique",
     "PICS":"headphones"
@@ -114,6 +121,15 @@
   },{
     "NAME":"Lecture",
     "PICS":"book-open"
+  },{
+    "NAME":"Bricolage",
+    "PICS":"hammer"
+  },{
+    "NAME":"Jardinage",
+    "PICS":"seedling"
+  },{
+    "NAME":"...",
+    "PICS":"ellipsis-h"
   }
 ]
 }
