@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théo Dufay - Éducateur Spécialisé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-md z-50 animate-fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold gradient-text">TD</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">À propos</a>
+                    <a href="#experience" class="text-gray-700 hover:text-purple-600 transition">Expériences</a>
+                    <a href="#formation" class="text-gray-700 hover:text-purple-600 transition">Formations</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contact</a>
+                </div>
+                <button onclick="window.location.href='mailto:dufay.theo@gmail.com'" class="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-6 py-2 rounded-full hover:shadow-lg transition transform hover:scale-105">
+                    Me contacter
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in-up">
+                    <div class="inline-block bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        Disponible pour de nouveaux projets
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+                        Théo <span class="gradient-text">Dufay</span>
+                    </h1>
+                    <p class="text-2xl text-gray-600 mb-6">Éducateur Spécialisé</p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Passionné par l'accompagnement social auprès des jeunes et des familles. 
+                        Expérience solide en travail de rue et en accompagnement éducatif.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl transition transform hover:scale-105">
+                            📧 Me contacter
+                        </a>
+                        <a href="#experience" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold border-2 border-purple-600 hover:bg-purple-50 transition">
+                            📄 Voir mon parcours
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="animate-fade-in-up" style="animation-delay: 0.2s; opacity: 0;">
+                    <div class="relative">
+                        <div class="w-72 h-72 mx-auto bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center text-white text-8xl font-bold shadow-2xl">
+                            TD
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-xl p-6">
+                            <div class="text-3xl font-bold text-purple-600">3+</div>
+                            <div class="text-sm text-gray-600">Ans d'expérience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-3">👤</div>
+                    <div class="text-sm text-gray-500 mb-1">Âge</div>
+                    <div class="text-xl font-semibold text-gray-900">35 ans</div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-3">🚗</div>
+                    <div class="text-sm text-gray-500 mb-1">Permis</div>
+                    <div class="text-xl font-semibold text-gray-900">Permis B</div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-3">🏥</div>
+                    <div class="text-sm text-gray-500 mb-1">Certifications</div>
+                    <div class="text-xl font-semibold text-gray-900">PSC1 • PSSM</div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                    <div class="text-4xl mb-3">📍</div>
+                    <div class="text-sm text-gray-500 mb-1">Localisation</div>
+                    <div class="text-xl font-semibold text-gray-900">Rouvroy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Domaines d'expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 card-hover">
+                    <div class="text-5xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Travail de rue</h3>
+                    <p class="text-gray-600">Accompagnement social auprès des jeunes de 11 à 25 ans dans leur environnement</p>
+                </div>
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 card-hover">
+                    <div class="text-5xl mb-4">👨‍👩‍👧‍👦</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Soutien familial</h3>
+                    <p class="text-gray-600">Accompagnement et soutien des familles dans leurs démarches sociales</p>
+                </div>
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 card-hover">
+                    <div class="text-5xl mb-4">⚖️</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Protection judiciaire</h3>
+                    <p class="text-gray-600">Expérience en CEF avec des adolescents sous contrôle judiciaire</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expériences -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Parcours Professionnel</h2>
+            
+            <div class="space-y-8">
+                <!-- Exp 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover border-l-4 border-purple-600">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Éducateur spécialisé</h3>
+                            <p class="text-purple-600 font-semibold">SPS « Avenir des cités » • Harnes</p>
+                        </div>
+                        <div class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mt-2 md:mt-0">
+                            Janvier 2023 - Maintenant
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Travail de rue et accompagnement sociaux auprès des jeunes de 11/16 ans et de leurs familles
+                    </p>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover border-l-4 border-blue-600">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Éducateur spécialisé</h3>
+                            <p class="text-blue-600 font-semibold">Association des centres sociaux de Mazingarbe</p>
+                        </div>
+                        <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mt-2 md:mt-0">
+                            Avril - Décembre 2022
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Travail de rue et animation auprès des jeunes 14/25 ans et des familles
+                    </p>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover border-l-4 border-green-600">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Stagiaire Éducateur</h3>
+                            <p class="text-green-600 font-semibold">Centre Éducatif Fermé • Liévin</p>
+                        </div>
+                        <div class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mt-2 md:mt-0">
+                            Sept 2020 - Fév 2021
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Accompagnement d'adolescents de 13/16 ans sous contrôle judiciaire, privés de liberté (PJJ)
+                    </p>
+                </div>
+
+                <!-- Parcours Dev Web -->
+                <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl shadow-lg p-8 card-hover">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-3xl mr-3">💻</span>
+                        Parcours antérieur en développement web
+                    </h4>
+                    <div class="space-y-3 text-gray-600">
+                        <p><strong>2014-2017 :</strong> Développeur Web chez Groww - Application réseau social d'aide au jardinage</p>
+                        <p><strong>2011-2014 :</strong> Développeur chez Addictiz - Applications, sites internet et jeux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations -->
+    <section id="formation" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Formations & Diplômes</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 card-hover">
+                    <div class="text-3xl mb-3">🎓</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Éducateur Spécialisé</h3>
+                    <p class="text-purple-600 font-semibold mb-2">IRTS Loos</p>
+                    <p class="text-gray-600 text-sm">2019 - En cours</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-6 card-hover">
+                    <div class="text-3xl mb-3">🏥</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Premier Secours Santé Mentale</h3>
+                    <p class="text-red-600 font-semibold mb-2">HCFORMATION Liévin</p>
+                    <p class="text-gray-600 text-sm">Décembre 2025</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 card-hover">
+                    <div class="text-3xl mb-3">🚑</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">PSC1</h3>
+                    <p class="text-blue-600 font-semibold mb-2">AST Henin-Beaumont</p>
+                    <p class="text-gray-600 text-sm">Mars 2023</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 card-hover">
+                    <div class="text-3xl mb-3">📚</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Pédagogie Sociale</h3>
+                    <p class="text-green-600 font-semibold mb-2">AFERTES Avion</p>
+                    <p class="text-gray-600 text-sm">Septembre 2022</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-2xl p-6 card-hover">
+                    <div class="text-3xl mb-3">💻</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Licence Pro Développement Web</h3>
+                    <p class="text-indigo-600 font-semibold mb-2">Université Picardie Jules Verne</p>
+                    <p class="text-gray-600 text-sm">2010 - 2011</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-6 card-hover">
+                    <div class="text-3xl mb-3">🎯</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">BTS Informatique de Gestion</h3>
+                    <p class="text-yellow-600 font-semibold mb-2">Lycée Guy Mollet Arras</p>
+                    <p class="text-gray-600 text-sm">2005 - 2010</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bénévolat & Loisirs -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Bénévolat -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 gradient-text">🤲 Engagement associatif</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">Collectif Makralles</h3>
+                            <p class="text-gray-600 text-sm mb-1">Charleville-Mézières</p>
+                            <p class="text-purple-600 font-semibold">Festival International du théâtre de marionnette - Régie Site</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">Maison et Jardin Partagé</h3>
+                            <p class="text-gray-600 text-sm mb-1">Fosse 3</p>
+                            <p class="text-purple-600 font-semibold">Vice-Trésorier</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loisirs -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 gradient-text">🎯 Centres d'intérêt</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white rounded-xl p-6 text-center shadow-lg card-hover">
+                            <div class="text-4xl mb-2">🥾</div>
+                            <p class="font-semibold text-gray-900">Randonnée</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 text-center shadow-lg card-hover">
+                            <div class="text-4xl mb-2">💻</div>
+                            <p class="font-semibold text-gray-900">Informatique</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 text-center shadow-lg card-hover">
+                            <div class="text-4xl mb-2">🧗</div>
+                            <p class="font-semibold text-gray-900">Escalade</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 text-center shadow-lg card-hover">
+                            <div class="text-4xl mb-2">🌱</div>
+                            <p class="font-semibold text-gray-900">Jardinage</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6 text-center shadow-lg card-hover">
+                        <div class="text-4xl mb-2">✈️</div>
+                        <p class="font-semibold text-gray-900">Voyage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-600 to-purple-800 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Travaillons ensemble</h2>
+            <p class="text-xl mb-12 text-purple-100">N'hésitez pas à me contacter pour échanger sur vos projets</p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <a href="mailto:dufay.theo@gmail.com" class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition card-hover">
+                    <div class="text-4xl mb-3">📧</div>
+                    <div class="font-semibold mb-2">Email</div>
+                    <div class="text-sm text-purple-200">dufay.theo@gmail.com</div>
+                </a>
+                <a href="tel:0685511730" class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition card-hover">
+                    <div class="text-4xl mb-3">📱</div>
+                    <div class="font-semibold mb-2">Téléphone</div>
+                    <div class="text-sm text-purple-200">06 85 51 17 30</div>
+                </a>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div class="text-4xl mb-3">📍</div>
+                    <div class="font-semibold mb-2">Adresse</div>
+                    <div class="text-sm text-purple-200">3 Route d'Izel<br>62320 Rouvroy</div>
+                </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 inline-block">
+                <p class="text-sm text-purple-200 mb-2">Langues</p>
+                <div class="flex gap-4 justify-center">
+                    <span class="bg-white/20 px-4 py-2 rounded-full text-sm">🇬🇧 Anglais (Moyen)</span>
+                    <span class="bg-white/20 px-4 py-2 rounded-full text-sm">🇪🇸 Espagnol (Base)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400">© 2025 Théo Dufay - Éducateur Spécialisé</p>
+            <p class="text-gray-500 text-sm mt-2">Conçu avec passion pour l'accompagnement social</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Animation des éléments avec delay
+        document.querySelectorAll('[style*="animation-delay"]').forEach(el => {
+            setTimeout(() => {
+                el.style.opacity = '1';
+            }, 200);
+        });
+    </script>
+</body>
+</html>
